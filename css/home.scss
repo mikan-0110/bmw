@@ -1,0 +1,644 @@
+@use 'variable';
+
+.mainTitle{
+    .content{
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+
+        @media only screen and (max-width: 992px) {
+            max-width: 100%;
+            width: 100%;
+        }
+        @media only screen and (max-width: 480px) {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+    img{
+        display: none;
+        @media only screen and (max-width: 992px) {
+            display: block;
+            max-width: 100%;
+            width: 100%;
+            object-fit: contain;
+            // height: 558px;
+        }
+        @media only screen and (max-width: 480px) {
+            max-width: 100%;
+            width: 100%;
+            // height: 254px;
+        }
+    }
+    .content__inner{
+        position: relative;
+        max-width: 1280px;
+        width: 100%;
+        margin: auto;
+        padding: 50px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        color: #fff;
+        z-index: 1;
+        background-color: variable.$themeColor;
+
+        @media only screen and (max-width: 992px) {
+            max-width: 100%;
+            width: 100%;
+            height: 500px;
+            padding: 145px 0px;
+        }
+        @media only screen and (max-width: 480px) {
+            max-width: 100%;
+            width: 100%;
+            height: 290px;
+            padding-top: 70px;
+        }
+
+        &::before{
+            content: "";
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: calc(100% + 90px );
+            top: -45px;
+            left: 0;
+            background-color: variable.$themeColor;
+            transform: skewY(-4deg);
+            z-index: -1;
+
+            @media only screen and (max-width: 992px) {
+                display: none;
+            }
+        }
+        h2{
+            font-size: 40px;
+            color: #F2F2F2;
+            font-family: 'Verdana';
+            text-align: center;
+            margin-bottom: 44px;
+
+            @media only screen and (max-width: 480px) {
+                font-size: 26px;
+                margin-bottom: 24px;
+            }
+        
+        }
+        p:nth-of-type(1){
+            font-size: 28px;
+            color: #F2F2F2;
+            font-family: '游ゴシック';
+            font-weight: bold;
+            text-align: center;
+            @media only screen and (max-width: 480px) {
+                font-size: 18px;
+                margin-bottom: 58px;
+            }
+        }
+        p:nth-of-type(2){
+            font-size: 20px;
+            font-family: 'Verdana';
+            margin-top: 44px;
+            text-align: center;
+
+            @media only screen and (max-width: 480px) {
+                font-size: 16px;
+                margin: auto;
+                width: 95%;
+                border: 1px solid #F2F2F2;
+                
+            }
+            a{
+                text-decoration: none;
+                color: #F2F2F2;
+                padding: 17px 0;
+                border: 1px solid #F2F2F2;
+                display: block;
+                width: 180px;
+                margin: auto;
+                position: relative;
+
+                @media only screen and (max-width: 480px) {
+                    border: 0;
+                    padding: 0;
+                    display: block;
+                    width: 100%;
+                    padding: 14px 0;
+                }
+                &::after{
+                    content: "";
+                    position: absolute;
+                    z-index: -1;
+                    bottom: 0;
+                    left: 0;
+                    width: 0;
+                    height: 100%;
+                    background: #fff;
+                    transition: all .5s;
+                    opacity: 0;
+                }
+                &:hover::after{
+                    width: 100%;
+                    opacity: 1;
+                }
+                &:hover{
+                    color: variable.$themeColor;
+                    z-index: 2;
+                }
+            }
+        }
+    }
+}
+#mainvisual{
+    background-image: url('../images/pic1.jpg');  
+    height: 720px;
+    background-position: center top;
+
+    @media only screen and (max-width: 992px) {
+        display: none;
+    }
+}
+
+.articleBMW{
+    text-align: center;
+    @media only screen and (max-width: 992px) {
+        text-align: left;
+        padding: 47px 60px 65px 60px;
+    }
+    @media only screen and (max-width: 480px) {
+        padding: 25px 20px 55px 20px;
+    }
+    h3{
+        font-size: 36px;
+        font-family: '游ゴシック';
+        color: variable.$baseColor;
+        margin-top: 150px;
+        margin-bottom: 30px;
+
+        @media only screen and (max-width: 992px) {
+            margin-top: 0%;
+        }
+
+        @media only screen and (max-width: 480px) {
+            font-size: 24px;
+            margin-bottom: 25px;
+        }
+    }
+    p:nth-of-type(1){
+        font-family: 'Verdana';
+        font-weight: bold;
+        font-style: italic;
+        font-size: 14px;
+        color: #CCCCCC;
+        width: 520px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-top: 1px solid #CCCCCC;
+        border-bottom: 1px solid #CCCCCC;
+        margin: auto;
+        @media only screen and (max-width: 992px) {
+            margin: 0%;
+            width: 100%;
+        }
+    }
+    p:nth-of-type(2){
+        font-size: 14px;
+        font-family: '游ゴシック';
+        color: #000000;
+        width: 520px;
+        margin: auto;
+        line-height: 22px;
+        margin-top: 23px;
+        @media only screen and (max-width: 992px) {
+            margin: 0%;
+            margin-top: 32px;
+            width: 100%;
+        }
+    }
+    p:nth-of-type(3){
+        font-size: 16px;
+        font-family: 'Verdana';
+        margin-top: 55px;
+        margin-bottom: 112px;
+
+        @media only screen and (max-width: 992px) {
+            margin-bottom: 0%;
+        }
+
+        @media only screen and (max-width: 480px) {
+            margin-bottom: 0;
+            text-align: center;
+            border: 1px solid #CCCCCC;
+        }
+
+        a{
+            text-decoration: none;
+            color: variable.$baseColor;
+            padding: 14px 37px;
+            border: 1px solid #CCCCCC;
+            position: relative;
+            @media only screen and (max-width: 480px) {
+                border: 0;
+                display: block;
+                width: 100%;
+                padding: 14px 0;
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                z-index: -1;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 100%;
+                background: variable.$baseColor;
+                transition: all .5s;
+                opacity: 0;
+            }
+            &:hover::after{
+                width: 100%;
+                opacity: 1;
+            }
+            &:hover{
+                color: #FFFFFF;
+                z-index: 2;
+            }
+        }
+    }
+}
+.content{
+    display: flex;
+    max-width: 1280px;
+    margin: auto;
+
+    @media only screen and (max-width: 992px) {
+        max-width: 100%;
+        width: 100%;
+        display: block;
+    }
+
+    .content_img{
+        width: 50%;
+        height: 680px;
+        @media only screen and (max-width: 992px) {
+            width: 100%;
+            height: inherit;
+        }
+        @media only screen and (max-width: 480px) {
+            width: 100%;
+            // height: 270px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            @media only screen and (max-width: 992px) {
+                width: 100%;
+                height: auto;
+                display: block;
+                object-fit: contain;
+            }
+            @media only screen and (max-width: 480px) {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    .content__item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        width: 50%;
+        padding: 60px;
+        box-sizing: border-box;
+
+
+        @media only screen and (max-width: 992px) {
+            width: 100%;
+            display: block;
+        }
+        @media only screen and (max-width: 480px) {
+            padding: 27px 20px 60px 20px;
+        }
+
+    }
+    &:nth-child(2n) .content__item{
+        order: -1;
+        text-align: right;
+        @media only screen and (max-width: 992px) {
+            text-align: left;
+        }
+    }
+    @mixin articleTitle($textColor){
+        font-size: 36px;
+        font-family: '游ゴシック';
+        margin-bottom: 25px;
+        color: $textColor;
+        @media only screen and (max-width: 480px) {
+            font-size: 24px;
+        }
+    }
+    @mixin subTitle($textColor) {
+        font-family: 'Verdana';
+        font-weight: bold;
+        font-style: italic;
+        color: $textColor;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-top: 1px solid $textColor;
+        border-bottom: 1px solid $textColor;
+        margin-bottom: 20px;
+        @media only screen and (max-width: 480px) {
+            font-size: 14px;
+        }
+    }
+    @mixin articleText($textColor) {
+        font-size: 14px;
+        font-family: '游ゴシック';
+        line-height: 22px;
+        margin-bottom: 44px;
+        color: $textColor;
+    }
+    @mixin articleLink($textColor, $borderColor, $hoverBG, $hoverTextColor) {
+        font-size: 16px;
+        font-family: 'Verdana';
+
+        a{
+            text-decoration: none;
+            color: $textColor;
+            padding: 14px 37px;
+            border: 1px solid $borderColor;
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                z-index: -1;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 100%;
+                background: $hoverBG;
+                transition: all .5s;
+                opacity: 0;
+            }
+            &:hover::after{
+                width: 100%;
+                opacity: 1;
+            }
+            &:hover{
+                color: $hoverTextColor;
+                z-index: 2;
+            }
+        }
+        @media only screen and (max-width: 480px) {
+            text-align: center;
+
+            a{
+                display: block;
+                width: 100%;
+                padding: 14px 0;
+            }
+        }
+    }
+    
+    
+    @mixin border_top($bottom, $right, $left, $borderColor) {
+        content: "";
+        position: absolute;
+        margin: auto;
+        bottom: $bottom;
+        right: $right;
+        left: $left;
+        width: 30px; 
+        height: 30px;
+        border: 1px solid $borderColor;
+    }
+    @mixin arrow_top($bottom, $right, $left, $borderPx, $borderColor) {
+        content: "";
+        border-top: solid $borderPx $borderColor;
+        border-left: solid $borderPx $borderColor;
+        width: 5px;
+        height: 5px;
+        transform: rotate(45deg);
+        position: absolute;
+        bottom: $bottom;
+        right: $right;
+        left: $left;
+    }
+    @mixin border_bottom($bottom, $right, $left, $borderColor) {
+        content: "";
+        position: absolute;
+        margin: auto;
+        bottom: $bottom;
+        right: $right;
+        left: $left;
+        width: 30px; 
+        height: 30px; 
+        border: 1px solid $borderColor;
+    }
+    @mixin arrow_bottom($bottom, $right, $left, $borderPx, $borderColor) {
+        content: "";
+        border-bottom: solid $borderPx $borderColor;
+        border-right: solid $borderPx $borderColor;
+        width: 5px;
+        height: 5px;
+        transform: rotate(45deg);
+        position: absolute;  
+        bottom: $bottom;
+        right: $right;
+        left: $left;
+    }
+    .articleEmblem{
+        background-color: variable.$baseColor;
+        position: relative;
+        h3{
+            @include articleTitle(#fff)
+        }
+        p:nth-of-type(1){
+            @include subTitle(#FFFFFF)
+        }
+        p:nth-of-type(2){
+            @include articleText(#FFFFFF)
+        }
+        p:nth-of-type(3){
+            @include articleLink(#FFFFFF, #FFFFFF, #FFFFFF, variable.$baseColor)
+        }
+        .arrow_top{
+            &::before{
+                @include border_top(50px, 14px, auto, #fff)
+            }
+            &::after{
+                @include arrow_top(63px, 27px, auto, 1px, #fff)
+            }
+            @media only screen and (max-width: 992px) {
+                display: none;
+            }
+        }
+        .arrow_bottom{
+            &::before{
+                @include border_bottom(19px, 14px, auto, #fff)
+            }
+            &::after{
+                @include arrow_bottom(35px, 27px, auto, 1px, #fff)
+            }
+            @media only screen and (max-width: 992px) {
+                display: none;
+            }
+        }
+    }
+    .articleFeatures{
+        position: relative;
+        h3{
+            @include articleTitle(variable.$themeColor)
+        }
+        p:nth-of-type(1){
+            @include subTitle(#CCCCCC)
+        }
+        p:nth-of-type(2){
+            @include articleText(#000000)
+        }
+        p:nth-of-type(3){
+            @include articleLink(variable.$themeColor, #CCCCCC, variable.$themeColor, #FFFFFF)
+        }
+        .arrow_top{
+            &::before{
+                @include border_top(50px, auto, 15.5px, #CCCCCC)
+            }
+            &::after{
+                @include arrow_top(62px, auto, 26.5px, 3px, variable.$themeColor)
+            }
+            @media only screen and (max-width: 992px) {
+                display: none;
+            }
+        }
+        .arrow_bottom{
+            &::before{
+                @include border_bottom(19px, auto, 15.5px, #CCCCCC)
+            }
+            &::after{
+                @include arrow_bottom(34px, auto, 26.5px, 3px, variable.$themeColor)
+            }
+            @media only screen and (max-width: 992px) {
+                display: none;
+            }
+        }
+    }
+    .articleMotorcycle{
+        background-color: variable.$themeColor;
+        position: relative;
+        h3{
+            @include articleTitle(#FFFFFF)
+        }
+        p:nth-of-type(1){
+            @include subTitle(#FFFFFF)
+        }
+        p:nth-of-type(2){
+            @include articleText(#FFFFFF)
+        }
+        p:nth-of-type(3){
+            @include articleLink(#FFFFFF, #FFFFFF, #FFFFFF, variable.$themeColor)
+        }
+        .arrow_top{
+            &::before{
+                @include border_top(50px, 14px, auto, #fff)
+            }
+            &::after{
+                @include arrow_top(63px, 27px, auto, 1px, #fff)
+            }
+            @media only screen and (max-width: 992px) {
+                display: none;
+            }
+        }
+        .arrow_bottom{
+            &::before{
+                @include border_bottom(19px, 14px, auto, #fff)
+            }
+            &::after{
+                @include arrow_bottom(35px, 27px, auto, 1px, #fff)
+            }
+            @media only screen and (max-width: 992px) {
+                display: none;
+            }
+        }
+    }
+    .articleMotor{
+        position: relative;
+        h3{
+            @include articleTitle(variable.$subColor)
+        }
+        p:nth-of-type(1){
+            @include subTitle(#CCCCCC)
+        }
+        p:nth-of-type(2){
+            @include articleText(#000000)
+        }
+        p:nth-of-type(3){
+            @include articleLink(variable.$subColor, #CCCCCC, variable.$subColor, #FFFFFF)
+        }
+        .arrow_top{
+            &::before{
+                @include border_top(50px, auto, 15.5px, #CCCCCC)
+            }
+            &::after{
+                @include arrow_top(62px, auto, 26.5px, 3px, variable.$subColor)
+            }
+            @media only screen and (max-width: 992px) {
+                display: none;
+            }
+        }
+        .arrow_bottom{
+            &::before{
+                @include border_bottom(19px, auto, 15.5px, #CCCCCC)
+            }
+            &::after{
+                @include arrow_bottom(34px, auto, 26.5px, 3px, variable.$subColor)
+            }
+            @media only screen and (max-width: 992px) {
+                display: none;
+            }
+        }
+    }
+    .articleBusiness{
+        background-color: variable.$subColor;
+        position: relative;
+        h3{
+            @include articleTitle(#FFFFFF)
+        }
+        p:nth-of-type(1){
+            @include subTitle(#FFFFFF)
+        }
+        p:nth-of-type(2){
+            @include articleText(#FFFFFF)
+        }
+        p:nth-of-type(3){
+            @include articleLink(#FFFFFF, #FFFFFF, #fff, variable.$subColor)
+        }
+        .arrow_top{
+            &::before{
+                @include border_top(50px, 14px, auto, #fff)
+            }
+            &::after{
+                @include arrow_top(63px, 27px, auto, 1px, #fff)
+            }
+            @media only screen and (max-width: 992px) {
+                display: none;
+            }
+        }
+        .arrow_bottom{
+            &::before{
+                @include border_bottom(19px, 14px, auto, #fff)
+            }
+            &::after{
+                @include arrow_bottom(35px, 27px, auto, 1px, #fff)
+            }
+            @media only screen and (max-width: 992px) {
+                display: none;
+            }
+        }
+    }
+}     

@@ -1,0 +1,472 @@
+main {
+  max-width: 1280px;
+  width: 100%;
+  margin: auto;
+}
+@media only screen and (max-width: 960px) {
+  main {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.mainVisual {
+  width: 960px;
+  display: block;
+  margin: auto;
+  margin-top: 60px;
+}
+@media only screen and (max-width: 960px) {
+  .mainVisual {
+    max-width: 100%;
+    width: 100%;
+    margin: 0%;
+  }
+}
+
+.artivle_BMW {
+  width: 960px;
+  margin: auto;
+  margin-top: 41px;
+  margin-bottom: 46px;
+}
+@media only screen and (max-width: 960px) {
+  .artivle_BMW {
+    max-width: 100%;
+    width: 100%;
+    padding: 30px 33px 34px 33px;
+    box-sizing: border-box;
+    margin: 0;
+  }
+}
+.artivle_BMW h2 {
+  margin-top: 41px;
+  font-size: 36px;
+  color: #000000;
+}
+@media only screen and (max-width: 960px) {
+  .artivle_BMW h2 {
+    margin: 0%;
+  }
+}
+.artivle_BMW .subTitle {
+  font-family: "Verdana";
+  font-weight: bold;
+  font-style: italic;
+  font-size: 14px;
+  color: #CCCCCC;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+  margin-top: 30px;
+}
+@media only screen and (max-width: 960px) {
+  .artivle_BMW .subTitle {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+.artivle_BMW .articleText {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+@media only screen and (max-width: 960px) {
+  .artivle_BMW .articleText {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+  }
+}
+.artivle_BMW .articleText p {
+  width: 48%;
+  font-size: 16px;
+  color: #000000;
+  font-family: "Yu Gothic";
+  line-height: 29px;
+}
+@media only screen and (max-width: 960px) {
+  .artivle_BMW .articleText p {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 23px;
+  }
+}
+
+.artivle_emble {
+  width: 960px;
+  margin: auto;
+  margin-top: 41px;
+  margin-bottom: 46px;
+}
+@media only screen and (max-width: 960px) {
+  .artivle_emble {
+    max-width: 100%;
+    width: 100%;
+    padding: 30px 33px 20px 33px;
+    box-sizing: border-box;
+    margin: 0;
+  }
+}
+.artivle_emble h2 {
+  margin-top: 41px;
+  font-size: 36px;
+  color: #000000;
+}
+@media only screen and (max-width: 960px) {
+  .artivle_emble h2 {
+    margin: 0%;
+  }
+}
+.artivle_emble .subTitle {
+  font-family: "Verdana";
+  font-weight: bold;
+  font-style: italic;
+  font-size: 14px;
+  color: #CCCCCC;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+  margin-top: 30px;
+}
+@media only screen and (max-width: 960px) {
+  .artivle_emble .subTitle {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+.artivle_emble .articleText {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+@media only screen and (max-width: 960px) {
+  .artivle_emble .articleText {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+  }
+}
+.artivle_emble .articleText div {
+  width: 48%;
+}
+@media only screen and (max-width: 960px) {
+  .artivle_emble .articleText div {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+.artivle_emble .articleText div p {
+  width: 100%;
+  font-size: 16px;
+  color: #000000;
+  font-family: "Yu Gothic";
+  line-height: 29px;
+}
+@media only screen and (max-width: 960px) {
+  .artivle_emble .articleText div p {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 23px;
+  }
+}
+.artivle_emble .articleText div p:first-child {
+  margin-bottom: 23px;
+}
+.artivle_emble .articleText p {
+  width: 48%;
+  font-size: 16px;
+  color: #000000;
+  font-family: "Yu Gothic";
+  line-height: 29px;
+}
+@media only screen and (max-width: 960px) {
+  .artivle_emble .articleText p {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 23px;
+  }
+}
+
+.artivle_features {
+  width: 960px;
+  margin: auto;
+  margin-top: 41px;
+  margin-bottom: 46px;
+}
+@media only screen and (max-width: 960px) {
+  .artivle_features {
+    max-width: 100%;
+    width: 100%;
+    padding: 30px 33px 34px 33px;
+    box-sizing: border-box;
+    margin: 0;
+  }
+}
+.artivle_features h2 {
+  margin-top: 41px;
+  font-size: 36px;
+  color: #000000;
+}
+@media only screen and (max-width: 960px) {
+  .artivle_features h2 {
+    margin: 0%;
+  }
+}
+.artivle_features .subTitle {
+  font-family: "Verdana";
+  font-weight: bold;
+  font-style: italic;
+  font-size: 14px;
+  color: #CCCCCC;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+  margin-top: 30px;
+}
+@media only screen and (max-width: 960px) {
+  .artivle_features .subTitle {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+.artivle_features .articleText {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+@media only screen and (max-width: 960px) {
+  .artivle_features .articleText {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+  }
+}
+.artivle_features .articleText p {
+  width: 48%;
+  font-size: 16px;
+  color: #000000;
+  font-family: "Yu Gothic";
+  line-height: 29px;
+}
+@media only screen and (max-width: 960px) {
+  .artivle_features .articleText p {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 23px;
+  }
+}
+
+.artivle_Motorcycle {
+  width: 960px;
+  margin: auto;
+  margin-top: 41px;
+  margin-bottom: 46px;
+}
+@media only screen and (max-width: 960px) {
+  .artivle_Motorcycle {
+    max-width: 100%;
+    width: 100%;
+    padding: 30px 33px 34px 33px;
+    box-sizing: border-box;
+    margin: 0;
+  }
+}
+.artivle_Motorcycle h2 {
+  margin-top: 41px;
+  font-size: 36px;
+  color: #000000;
+}
+@media only screen and (max-width: 960px) {
+  .artivle_Motorcycle h2 {
+    margin: 0%;
+  }
+}
+.artivle_Motorcycle .subTitle {
+  font-family: "Verdana";
+  font-weight: bold;
+  font-style: italic;
+  font-size: 14px;
+  color: #CCCCCC;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+  margin-top: 30px;
+}
+@media only screen and (max-width: 960px) {
+  .artivle_Motorcycle .subTitle {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+.artivle_Motorcycle .articleText {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+@media only screen and (max-width: 960px) {
+  .artivle_Motorcycle .articleText {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+  }
+}
+.artivle_Motorcycle .articleText p {
+  width: 48%;
+  font-size: 16px;
+  color: #000000;
+  font-family: "Yu Gothic";
+  line-height: 29px;
+}
+@media only screen and (max-width: 960px) {
+  .artivle_Motorcycle .articleText p {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 23px;
+  }
+}
+
+.artivle_sports {
+  width: 960px;
+  margin: auto;
+  margin-top: 41px;
+  margin-bottom: 46px;
+}
+@media only screen and (max-width: 960px) {
+  .artivle_sports {
+    max-width: 100%;
+    width: 100%;
+    padding: 30px 33px 34px 33px;
+    box-sizing: border-box;
+    margin: 0;
+  }
+}
+.artivle_sports h2 {
+  margin-top: 41px;
+  font-size: 36px;
+  color: #000000;
+}
+@media only screen and (max-width: 960px) {
+  .artivle_sports h2 {
+    margin: 0%;
+  }
+}
+.artivle_sports .subTitle {
+  font-family: "Verdana";
+  font-weight: bold;
+  font-style: italic;
+  font-size: 14px;
+  color: #CCCCCC;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+  margin-top: 30px;
+}
+@media only screen and (max-width: 960px) {
+  .artivle_sports .subTitle {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+.artivle_sports .articleText {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+@media only screen and (max-width: 960px) {
+  .artivle_sports .articleText {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+  }
+}
+.artivle_sports .articleText p {
+  width: 48%;
+  font-size: 16px;
+  color: #000000;
+  font-family: "Yu Gothic";
+  line-height: 29px;
+}
+@media only screen and (max-width: 960px) {
+  .artivle_sports .articleText p {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 23px;
+  }
+}
+
+.artivle_conditions {
+  width: 960px;
+  margin: auto;
+  margin-top: 41px;
+  margin-bottom: 46px;
+}
+@media only screen and (max-width: 960px) {
+  .artivle_conditions {
+    max-width: 100%;
+    width: 100%;
+    padding: 30px 33px 34px 33px;
+    box-sizing: border-box;
+    margin: 0;
+  }
+}
+.artivle_conditions h2 {
+  margin-top: 41px;
+  font-size: 36px;
+  color: #000000;
+}
+@media only screen and (max-width: 960px) {
+  .artivle_conditions h2 {
+    margin: 0%;
+  }
+}
+.artivle_conditions .subTitle {
+  font-family: "Verdana";
+  font-weight: bold;
+  font-style: italic;
+  font-size: 14px;
+  color: #CCCCCC;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+  margin-top: 30px;
+}
+@media only screen and (max-width: 960px) {
+  .artivle_conditions .subTitle {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+.artivle_conditions .articleText {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+@media only screen and (max-width: 960px) {
+  .artivle_conditions .articleText {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+  }
+}
+.artivle_conditions .articleText p {
+  width: 48%;
+  font-size: 16px;
+  color: #000000;
+  font-family: "Yu Gothic";
+  line-height: 29px;
+}
+@media only screen and (max-width: 960px) {
+  .artivle_conditions .articleText p {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 23px;
+  }
+}
+/*# sourceMappingURL=subPage.css.map */

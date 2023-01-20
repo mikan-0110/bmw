@@ -1,0 +1,288 @@
+@use 'variable';
+main{
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+    @media only screen and(max-width: 960px) {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+.mainVisual{   
+    width: 960px;
+    display: block;
+    margin: auto;
+    margin-top: 60px;
+
+    @media only screen and(max-width: 960px) {
+        max-width: 100%;
+        width: 100%;
+        margin: 0%;
+    }
+}
+@mixin mainTitle (){
+    margin-top: 41px;
+    font-size: 36px;
+    color: #000000;
+
+    @media only screen and(max-width: 960px) {
+        margin: 0%;
+    }
+}
+@mixin subTitle {
+    font-family: 'Verdana';
+    font-weight: bold;
+    font-style: italic;
+    font-size: 14px;
+    color: #CCCCCC;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    margin-top: 30px;
+
+    @media only screen and(max-width: 960px) {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+@mixin articleText ($width){
+    width: $width;
+    font-size: 16px;
+    color: #000000;
+    font-family: 'Yu Gothic';
+    line-height: 29px;
+
+    @media only screen and(max-width: 960px) {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 23px;
+    }
+}
+.artivle_BMW{
+    width: 960px;
+    margin: auto;
+    margin-top: 41px;
+    margin-bottom: 46px;
+
+    @media only screen and(max-width: 960px) {
+        max-width: 100%;
+        width: 100%;
+        padding: 30px 33px 34px 33px;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    h2{
+        @include mainTitle
+    }
+    .subTitle{
+        @include subTitle
+    }
+    .articleText{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+
+        @media only screen and(max-width: 960px) {
+            max-width: 100%;
+            width: 100%;
+            display: block;
+        }
+        p{
+            @include articleText(48%)
+        }
+    }
+}
+.artivle_emble{
+    width: 960px;
+    margin: auto;
+    margin-top: 41px;
+    margin-bottom: 46px;
+
+    @media only screen and(max-width: 960px) {
+        max-width: 100%;
+        width: 100%;
+        padding: 30px 33px 20px 33px;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    h2{
+        @include mainTitle
+    }
+    .subTitle{
+        @include subTitle
+    }
+    .articleText{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+
+        @media only screen and(max-width: 960px) {
+            max-width: 100%;
+            width: 100%;
+            display: block;
+        }
+
+        div{
+            width: 48%;
+
+            @media only screen and(max-width: 960px) {
+                max-width: 100%;
+                width: 100%;
+            }
+            p{
+                @include articleText(100%)
+
+            }
+            p:first-child{
+                margin-bottom: 23px;
+            }
+        }
+        p{
+            @include articleText(48%)
+        }
+    }
+}
+.artivle_features{
+    width: 960px;
+    margin: auto;
+    margin-top: 41px;
+    margin-bottom: 46px;
+
+    @media only screen and(max-width: 960px) {
+        max-width: 100%;
+        width: 100%;
+        padding: 30px 33px 34px 33px;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    h2{
+        @include mainTitle
+    }
+    .subTitle{
+        @include subTitle
+    }
+    .articleText{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+
+        @media only screen and(max-width: 960px) {
+            max-width: 100%;
+            width: 100%;
+            display: block;
+        }
+        p{
+            @include articleText(48%)
+        }
+    }
+}
+.artivle_Motorcycle{
+    width: 960px;
+    margin: auto;
+    margin-top: 41px;
+    margin-bottom: 46px;
+
+    @media only screen and(max-width: 960px) {
+        max-width: 100%;
+        width: 100%;
+        padding: 30px 33px 34px 33px;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    h2{
+        @include mainTitle
+    }
+    .subTitle{
+        @include subTitle
+    }
+    .articleText{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+
+        @media only screen and(max-width: 960px) {
+            max-width: 100%;
+            width: 100%;
+            display: block;
+        }
+        p{
+            @include articleText(48%)
+        }
+    }
+}
+.artivle_sports{
+    width: 960px;
+    margin: auto;
+    margin-top: 41px;
+    margin-bottom: 46px;
+
+    @media only screen and(max-width: 960px) {
+        max-width: 100%;
+        width: 100%;
+        padding: 30px 33px 34px 33px;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    h2{
+        @include mainTitle
+    }
+    .subTitle{
+        @include subTitle
+    }
+    .articleText{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+
+        @media only screen and(max-width: 960px) {
+            max-width: 100%;
+            width: 100%;
+            display: block;
+        }
+        p{
+            @include articleText(48%)
+        }
+    }
+}
+.artivle_conditions{
+    width: 960px;
+    margin: auto;
+    margin-top: 41px;
+    margin-bottom: 46px;
+
+    @media only screen and(max-width: 960px) {
+        max-width: 100%;
+        width: 100%;
+        padding: 30px 33px 34px 33px;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    h2{
+        @include mainTitle
+    }
+    .subTitle{
+        @include subTitle
+    }
+    .articleText{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+
+        @media only screen and(max-width: 960px) {
+            max-width: 100%;
+            width: 100%;
+            display: block;
+        }
+
+        p{
+            @include articleText(48%)
+        }
+    }
+}
